@@ -1,0 +1,132 @@
+.chat-room {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.messages-container {
+  height: 500px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message-content {
+  flex: 1;
+}
+
+.message-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.timestamp {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.message-gif {
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+.reactions {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.message-form {
+  display: flex;
+  gap: 10px;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.message-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.message-form button:hover {
+  background-color: #0056b3;
+}
+
+.reactions-container {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reaction-counts {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.reaction-count {
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reaction-buttons {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.message:hover .reaction-buttons {
+  opacity: 1;
+}
+
+.reaction-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.reaction-button:hover {
+  background-color: #f0f0f0;
+}
+
+.reaction-button.active {
+  background-color: #e3f2fd;
+}
